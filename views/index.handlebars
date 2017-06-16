@@ -1,0 +1,27 @@
+<!-- index UI -->
+<!-- page receives from "/:id" post route: 'articles' array:
+    [
+        {
+        headline:<headline string>,
+        link: <link>,
+        summary: <summary
+        },
+    ]
+
+    from "/" get route: 'markets' array to build a market list 
+    -->
+
+<div class="articles-wrapper container">
+    <div class="articles row">
+        <div class="col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+            <!-- do  articles exist? -->
+            {{#if articles}}
+            <!-- they do -->
+                {{>show-articles}}
+            {{else}}
+            <!-- they do not -->
+                <p>No articles yet!</p>
+            {{/if}}
+        </div>
+    </div><!--/end articles row-->
+</div><!-- /end main container-->
