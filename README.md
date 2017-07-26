@@ -12,6 +12,7 @@ this web app then lets users create or delete note on each of the articles.
 * body-parser
 * cheerio
 * request
+* handlebars
  
  
  ## Solution on Heroku
