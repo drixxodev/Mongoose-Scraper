@@ -13,7 +13,7 @@ mongoose.Promise = Promise;
 
 
 // local or deployed? Use the right mongo db
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mongoscraper" );
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/mongoscraper" );
 
 
 
